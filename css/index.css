@@ -107,9 +107,19 @@ header nav a:link {
     border-bottom: 1px dashed black;
 }
 
+.about-page .top-content {
+    margin-bottom: 0;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.about-page .top-content .text-container {
+    width: 100%;
+    padding: 0 2.5%;
     padding-bottom: 20px;  
 }
 
@@ -180,6 +190,37 @@ header nav a:link {
     background: dodgerblue;
 }
 
+.about-page .middle-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    border: none;
+}
+
+.card {
+    width: 370px;
+    max-width: 100%;
+    margin: 30px 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.card h2 {
+    padding: 10px 0 15px 0;
+}
+
+.card button {
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border: 1px solid black;
+    transition: 0.3s;
+    border-radius: 9px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -192,6 +233,12 @@ header nav a:link {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.about-page .bottom-content .text-container {
+    width: 100%;
+    paddin: 0 1%;
+    padding-bottom: 20px
 }
 
 footer {
