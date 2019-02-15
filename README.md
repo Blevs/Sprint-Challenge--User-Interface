@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+HTML is a format designed to be read by a computer to perform layout. Traditionally, elements and named to determine how they effect the layout. However, we can also assign semantic meaning to these elemnts. This enables the names to impart meaning to humans when reading the code, but also enable other technologies like screen readers and search engines to have a better understanding of the meaning behind layout as it relates to the content it contains.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+The first difference is the sizing. Display block will fill the page with a block until it reaches the end of the line. Display inline makes the element as large as its content, allowing it and other elements to fit on the same line.
+
+The second, is that display inline allows us the set the height and width of the element.
 
 3. What are the 4 areas of the box model?
 
+The four areas, from the outside in, are: margin, border, padding, content.
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+The cross axis.
+
 5. Explain why git is valuable to a team of developers.
+
+Git enables developers to easily collaborate on projects. It allows developers to work on the same files at the same time without effecting each other, and then merge their changes when complete. It also tracks a unified history enabling there to be a single source of truth for the state of the repository's content.
+
+There are also other tools that make dealing with collaborative development easier, like git-bisect.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
