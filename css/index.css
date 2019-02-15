@@ -117,7 +117,8 @@ header nav a:link {
     padding-bottom: 20px;  
 }
 
-.about-page .top-content .text-container {
+.about-page .top-content .text-container,
+.contact-page .top-content .text-container {
     width: 100%;
     padding: 0 2.5%;
     padding-bottom: 20px;  
@@ -262,6 +263,51 @@ footer nav a {
     font-weight: bold;
 }
 
+.contact-page form {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.contact-page form label {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contact-page input[type=text],
+.contact-page select,
+.contact-page textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 7px 0 10px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid 2px lightgrey;
+    display: block;
+}
+
+.contact-page select {
+    background-color: white;
+}
+
+.contact-page .message {
+    height: 200px;
+}
+
+.contact-page input[type=submit] {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 15px 60px;
+    width: 100%;
+    border: 1px solid black;
+    transition: 0.3s;
+    font-size: 16px;
+    display: block;
+    margin-top: 20px;
+}
+
 @media (max-width: 800px) {
     .container {
         width: 95%;
@@ -298,5 +344,9 @@ footer nav a {
 
     header nav a:first-child {
         margin-left: 0;
+    }
+
+    .contact-page form {
+        width: 90%;
     }
 }
