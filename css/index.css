@@ -118,7 +118,8 @@ header nav a:link {
 }
 
 .about-page .top-content .text-container,
-.contact-page .top-content .text-container {
+.contact-page .top-content .text-container,
+.blog-page .top-content .text-container {
     width: 100%;
     padding: 0 2.5%;
     padding-bottom: 20px;  
@@ -306,6 +307,79 @@ footer nav a {
     font-size: 16px;
     display: block;
     margin-top: 20px;
+}
+
+.blog-page .middle-content {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+}
+
+.blog-page .middle-content .post {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 2.5%;
+}
+
+.post img {
+    max-width: 370px;
+}
+
+.post .post-content {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: dashed 1px black;
+}
+
+.post .post-content h2 {
+    padding: 0;
+    margin-bottom: 8px
+}
+
+.post .post-content a {
+    padding: 0;
+    display: block;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.post .post-content a:link {
+    text-decoration: none;
+}
+
+.pagination {
+    margin: auto;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    padding: 10px 15px;
+}
+
+.pagination a:link {
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: grey;
+}
+
+.pagination .active {
+    color: white;
+    background-color: black;
+}
+
+@media (min-width: 800px) {
+    .full-dt {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 800px) {
