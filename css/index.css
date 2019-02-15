@@ -94,6 +94,11 @@ header nav a:link {
     text-decoration: none;
 }
 
+.banner {
+    margin: 37px 0 23px 0;
+    width: 100%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -166,4 +171,5 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
