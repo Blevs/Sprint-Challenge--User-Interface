@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -71,6 +71,34 @@ p {
     margin: 0 auto;
 }
 
+header {
+    margin-top: 20px;
+}
+
+header nav {
+    display: inline-flex;
+    width: 75%;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: black;
+    font-size: 14px;
+}
+
+header nav a:first-child {
+    margin-left: 40px;
+}
+
+header nav a:link {
+    text-decoration: none;
+}
+
+.banner {
+    margin: 37px 0 23px 0;
+    width: 100%;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,9 +107,21 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.about-page .top-content {
+    margin-bottom: 0;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.about-page .top-content .text-container,
+.contact-page .top-content .text-container,
+.blog-page .top-content .text-container {
+    width: 100%;
+    padding: 0 2.5%;
     padding-bottom: 20px;  
 }
 
@@ -103,6 +143,7 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
+    min-width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -110,6 +151,77 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box-1 {
+    background: teal;
+}
+
+.middle-content .boxes .box-2 {
+    background: gold;
+}
+
+.middle-content .boxes .box-3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box-4 {
+    background: coral;
+}
+
+.middle-content .boxes .box-5 {
+    background: crimson;
+}
+
+.middle-content .boxes .box-6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box-7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box-8 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box-9 {
+    background: indigo;
+}
+
+.middle-content .boxes .box-10 {
+    background: dodgerblue;
+}
+
+.about-page .middle-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    border: none;
+}
+
+.card {
+    width: 370px;
+    max-width: 100%;
+    margin: 30px 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.card h2 {
+    padding: 10px 0 15px 0;
+}
+
+.card button {
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border: 1px solid black;
+    transition: 0.3s;
+    border-radius: 9px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 .bottom-content {
@@ -124,6 +236,12 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.about-page .bottom-content .text-container {
+    width: 100%;
+    paddin: 0 1%;
+    padding-bottom: 20px
 }
 
 footer {
@@ -143,4 +261,166 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-page form {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.contact-page form label {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contact-page input[type=text],
+.contact-page select,
+.contact-page textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 7px 0 10px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid 2px lightgrey;
+    display: block;
+}
+
+.contact-page select {
+    background-color: white;
+}
+
+.contact-page .message {
+    height: 200px;
+}
+
+.contact-page input[type=submit] {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 15px 60px;
+    width: 100%;
+    border: 1px solid black;
+    transition: 0.3s;
+    font-size: 16px;
+    display: block;
+    margin-top: 20px;
+}
+
+.blog-page .middle-content {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+}
+
+.blog-page .middle-content .post {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 2.5%;
+}
+
+.post img {
+    max-width: 370px;
+}
+
+.post .post-content {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: dashed 1px black;
+}
+
+.post .post-content h2 {
+    padding: 0;
+    margin-bottom: 8px
+}
+
+.post .post-content a {
+    padding: 0;
+    display: block;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.post .post-content a:link {
+    text-decoration: none;
+}
+
+.pagination {
+    margin: auto;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    padding: 10px 15px;
+}
+
+.pagination a:link {
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: grey;
+}
+
+.pagination .active {
+    color: white;
+    background-color: black;
+}
+
+@media (min-width: 800px) {
+    .full-dt {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .full-mb {
+        width: 100% !important;
+    }
+
+    .column-mb {
+        flex-direction: column;
+    }
+
+    header {
+        text-align:
+            center;
+    }
+
+    header img {
+        display: block;
+    }
+
+    footer nav {
+        width: 100%;
+        padding: 0;
+    }
+
+    header nav a,
+    footer nav a {
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    header nav a:first-child {
+        margin-left: 0;
+    }
+
+    .contact-page form {
+        width: 90%;
+    }
 }
